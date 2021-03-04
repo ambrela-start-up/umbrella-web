@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "8b4c1f35-ae61-4c95-9a02-21072aa4a20c",
+		"name": "umbrella-web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response":[]
+		},
+		{
+			"name": "list_ambulan_belum_terverifikasi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/verifikasi/list_ambulan_belum_terverifikasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"verifikasi",
+						"list_ambulan_belum_terverifikasi"
+					]
+				}
+			},
+			"response": {
+				"pesan": "Sukses",
+				"error": false,
+				"ambulan": [{
+					"id": "1",
+					"jenis": "lainnya",
+					"no_hp": "0879089",
+					"sk": "SK986/9869",
+					"plat_nomor": "B 3434",
+					"stnk": "1321221",
+					"foto": "1625081445.jpeg",
+					"no_rekening": "46456",
+					"kecamatan": "Tegal Kunir",
+					"kelurahan": "Banyuasih",
+					"on": "1",
+					"aktif": "0"
+				}]
+			}
+		},
+		{
+			"name": "list_customer_belum_terverifikasi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/verifikasi/list_customer_belum_terverifikasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"verifikasi",
+						"list_customer_belum_terverifikasi"
+					]
+				}
+			},
+			"response": {
+				"pesan": "Sukses",
+				"error": false,
+				"customer": [{
+					"id": "2",
+					"id_user": "7",
+					"nama": "Fatahillah Atarita",
+					"no_telepon": "08987777323",
+					"kecamatan": "Tegal Kunir",
+					"kelurahan": "Banyuasih",
+					"alamat": "jln kasa no 13",
+					"ktp": "999343252546",
+					"aktif": "0"
+				}]
+			}
+		},
+		{
+			"name": "verifikasi_ambulan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/verifikasi/verifikasi_ambulan/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"verifikasi",
+						"verifikasi_ambulan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verifikasi_customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/verifikasi/verifikasi_customer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"verifikasi",
+						"verifikasi_customer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
