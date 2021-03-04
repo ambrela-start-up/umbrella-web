@@ -24,7 +24,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/login",
+					"raw": "http://localhost/umbrella-web/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -43,7 +43,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/admin/verifikasi/list_ambulan_belum_terverifikasi",
+					"raw": "http://localhost/umbrella-web/admin/verifikasi/list_ambulan_belum_terverifikasi",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -81,7 +81,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/admin/verifikasi/list_customer_belum_terverifikasi",
+					"raw": "http://localhost/umbrella-web/admin/verifikasi/list_customer_belum_terverifikasi",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -116,7 +116,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/admin/verifikasi/verifikasi_ambulan/1",
+					"raw": "http://localhost/umbrella-web/admin/verifikasi/verifikasi_ambulan/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -138,7 +138,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/admin/verifikasi/verifikasi_customer/2",
+					"raw": "http://localhost/umbrella-web/admin/verifikasi/verifikasi_customer/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
