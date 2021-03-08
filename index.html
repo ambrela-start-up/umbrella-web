@@ -87,7 +87,7 @@
         $('#sign_in').submit(e => {
             e.preventDefault()
             console.log('submit');
-            $.post('http://localhost/umbrella-web/login', {
+            $.post('https://umbrella-back-end.000webhostapp.com/login', {
                 email: $('#username').val(),
                 password: $('#password').val()
             }, data => {

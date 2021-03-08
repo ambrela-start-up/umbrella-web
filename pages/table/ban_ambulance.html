@@ -496,7 +496,7 @@
             const verifikasi = id => {
                 
                 const url =
-                    `http://localhost/umbrella-web/admin/ambulan/ban/${id}`
+                    `https://umbrella-back-end.000webhostapp.com/admin/ambulan/ban/${id}`
                 $.get(url, data => {
                     window.location.href = ""
                     
@@ -504,7 +504,7 @@
             }
 
             const ambilData = () => {
-                const url = 'http://localhost/umbrella-web/admin/ambulan/list'
+                const url = 'https://umbrella-back-end.000webhostapp.com/admin/ambulan/list'
                 $.get(url, data => {
                     data.ambulan.forEach(d => {
                         const el = `<tr>
@@ -514,7 +514,7 @@
                                             <td>${d.no_hp}</td>
                                             <td>${d.jenis}</td>
                                             <td>${d.aktif == 1 ? 'aktif' : 'tidak aktif'}</td>
-                                            <td> <img src="http://localhost/umbrella-web/assets/img/ambulan/${d.foto}" width="50" /> </td>
+                                            <td> <img src="https://umbrella-back-end.000webhostapp.com/assets/img/ambulan/${d.foto}" width="50" /> </td>
                                             <td><a class="btn btn-primary button-verifikasi" data-id="${d.id}" >Ban</a></td>
                                         </tr>`
 

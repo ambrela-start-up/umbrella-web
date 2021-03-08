@@ -495,14 +495,14 @@
 
             const verifikasi = id => {
                 const url =
-                    `http://localhost/umbrella-web/admin/verifikasi/verifikasi_customer/${id}`
+                    `https://umbrella-back-end.000webhostapp.com/admin/verifikasi/verifikasi_customer/${id}`
                 $.get(url, data => {
                     window.location.href = ""
                 })
             }
 
             const ambilData = () => {
-                const url = 'http://localhost/umbrella-web/admin/verifikasi/list_customer_belum_terverifikasi'
+                const url = 'https://umbrella-back-end.000webhostapp.com/admin/verifikasi/list_customer_belum_terverifikasi'
                 $.get(url, data => {
                     data.customer.forEach(d => {
                         const el = `<tr>
